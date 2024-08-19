@@ -24,12 +24,12 @@ namespace StokTakip
         {
             using (var context = new StokContext())
             {
-                if (txtBoyaKodu.Text == "" || 
-                    txtBoyaRengi.Text == "" || 
-                    txtFiyat.Text == "" || 
-                    txtStokAdet.Text == "" || 
-                    txtUreticiFirma.Text == "" ||
-                    tipBoya.Text == "" || tipBoya.Text == "Seçiniz...")
+                if (txtBoyaKodu.Text == "".Trim() || 
+                    txtBoyaRengi.Text == "".Trim() || 
+                    txtFiyat.Text == "".Trim() || 
+                    txtStokAdet.Text == "".Trim() || 
+                    txtUreticiFirma.Text == "".Trim() ||
+                    tipBoya.Text == "".Trim() || tipBoya.Text == "Seçiniz...")
                 {
                     MessageBox.Show("Tüm Alanlar Dolu olmalı");
                     return;
